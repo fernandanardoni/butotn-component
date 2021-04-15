@@ -17,6 +17,16 @@ border: none;
 border-radius: 6px;
 :hover {
     background: #AEAEAE;
+    cursor: pointer;
+}
+:disabled {
+    color: #9E9E9E;
+    cursor: not-allowed;
+    &:hover {
+        background:#e0e0e0;
+    }
+} 
+
 
 `;
 

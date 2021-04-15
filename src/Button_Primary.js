@@ -25,6 +25,12 @@ const Button_Primary = styled(Button)`
   :hover {
     background: ${props => props.outline || props.transparent  ? "rgb(41,98,255,0.2)" : "#0039CB"};
   }
+  :disabled {
+    color: #9E9E9E;
+    &:hover {
+      background: transparent;
+    }
+  }
 `;
 
 export default Button_Primary;
