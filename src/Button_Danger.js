@@ -2,10 +2,11 @@ import styled from 'styled-components';
 import Button from './Button';
 
 const Button_Danger = styled(Button)`
-  background: #D32F2F;
-  color: white;
+  background: ${ props => props.dangerOutline ? "transparent" : "#D32F2F" };
+  color: ${ props => props.dangerOutline ? "#D32F2F" : "white"};
+  border: ${props => props.dangerOutline ? "2px solid #D32F2F" : "none"};
   :hover {
-      background: #9A0007;
+      background: ${props => props.dangerOutline ? "rgb(211,47,47,0.3)" : "#9A0007"};
   }
 `;
 
